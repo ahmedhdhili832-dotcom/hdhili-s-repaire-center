@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Nouvelle Demande</title>
+
+<link rel="stylesheet"
+href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="form-container">
+
+<h1>
+Demande de Réparation
+</h1>
+
+<form
+action="add_request.php"
+method="POST">
+
+<select
+name="device_type"
+required>
+
+<option value="">
+Choisir un appareil
+</option>
+
+<option value="Smartphone">
+Smartphone
+</option>
+
+<option value="Ordinateur">
+Ordinateur
+</option>
+
+</select>
+
+<br><br>
+
+<input
+type="text"
+name="device_model"
+placeholder="Modèle de l'appareil"
+required>
+
+<textarea
+name="problem"
+placeholder="Décrire le problème"
+required>
+</textarea>
+
+<br><br>
+
+<button type="submit">
+
+Envoyer la Demande
+
+</button>
+
+</form>
+
+</div>
+
+</body>
+
+</html>
