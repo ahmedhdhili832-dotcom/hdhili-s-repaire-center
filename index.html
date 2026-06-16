@@ -1,164 +1,227 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hdhili's Repair Centre</title>
+<title>Ahmed Phone Repair</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, sans-serif;
+    font-family:'Cairo',sans-serif;
 }
 
 body{
-    background:#0f172a;
-    color:white;
+    background:#f5f7fa;
+    color:#333;
 }
 
 header{
     background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-right:20px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+.hero{
+    min-height:85vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
     text-align:center;
-    padding:80px 20px;
+    padding:50px 10%;
+    background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url('https://images.unsplash.com/photo-1511707171634-5f897ff02aa9');
+    background-size:cover;
+    background-position:center;
+    color:white;
 }
 
-header h1{
-    font-size:3rem;
-    margin-bottom:15px;
+.hero-content h1{
+    font-size:55px;
+    margin-bottom:20px;
 }
 
-header p{
-    font-size:1.2rem;
-    margin-bottom:25px;
+.hero-content p{
+    font-size:22px;
+    margin-bottom:30px;
 }
 
 .btn{
     display:inline-block;
-    padding:12px 25px;
-    background:#3b82f6;
+    padding:15px 35px;
+    background:#38bdf8;
     color:white;
     text-decoration:none;
-    border-radius:8px;
-    margin:5px;
+    border-radius:50px;
+    font-weight:bold;
+    transition:.3s;
 }
 
-section{
-    padding:60px 20px;
-    max-width:1200px;
-    margin:auto;
+.btn:hover{
+    background:#0284c7;
 }
 
 .services{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+.cards{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+    gap:25px;
 }
 
 .card{
-    background:#1e293b;
-    padding:25px;
-    border-radius:12px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
     text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
 }
 
 .card h3{
-    margin-bottom:10px;
+    margin:15px 0;
+    color:#1e3a8a;
+}
+
+.about{
+    background:white;
+    padding:80px 10%;
+    text-align:center;
 }
 
 .contact{
+    padding:80px 10%;
+    background:#0f172a;
+    color:white;
     text-align:center;
+}
+
+.contact p{
+    margin:15px 0;
+    font-size:18px;
 }
 
 footer{
     background:#020617;
+    color:white;
     text-align:center;
     padding:20px;
-    margin-top:30px;
+}
+
+@media(max-width:768px){
+.hero-content h1{
+font-size:35px;
+}
 }
 </style>
-</head>
 
+</head>
 <body>
 
 <header>
-    <h1>Hdhili's Repair Centre</h1>
-    <p>Professional Phone & Computer Repair Services</p>
-    <p>📍 In-Store Repair & Home Repair Available</p>
+<div class="logo">Ahmed Phone Repair</div>
 
-    <a href="#contact" class="btn">Book a Repair</a>
-    <a href="https://wa.me/21620021903" class="btn">WhatsApp Us</a>
+<nav>
+<a href="#">الرئيسية</a>
+<a href="#services">الخدمات</a>
+<a href="#about">من نحن</a>
+<a href="#contact">اتصل بنا</a>
+</nav>
 </header>
 
-<section>
-    <h2 style="text-align:center;margin-bottom:30px;">Our Services</h2>
-
-    <div class="services">
-
-        <div class="card">
-            <h3>📱 Phone Repair</h3>
-            <p>Screen replacement, battery issues, charging problems, software fixes.</p>
-        </div>
-
-        <div class="card">
-            <h3>💻 Computer Repair</h3>
-            <p>Hardware diagnostics, upgrades, system installation and troubleshooting.</p>
-        </div>
-
-        <div class="card">
-            <h3>🛡️ Virus Removal</h3>
-            <p>Complete malware and virus cleaning with system optimization.</p>
-        </div>
-
-        <div class="card">
-            <h3>🏠 Home Repair Service</h3>
-            <p>We come directly to your home for device diagnostics and repairs.</p>
-        </div>
-
-    </div>
+<section class="hero">
+<div class="hero-content">
+<h1>تصليح الهواتف باحترافية</h1>
+<p>شاشات - بطاريات - سوفتوير - فتح الشبكة - صيانة جميع أنواع الهواتف</p>
+<a href="#contact" class="btn">اطلب الخدمة الآن</a>
+</div>
 </section>
 
-<section>
-    <h2 style="text-align:center;margin-bottom:30px;">Why Choose Us?</h2>
+<section class="services" id="services">
+<h2 class="section-title">خدماتنا</h2>
 
-    <div class="services">
+<div class="cards">
 
-        <div class="card">
-            <h3>⚡ Fast Service</h3>
-            <p>Quick diagnostics and efficient repairs.</p>
-        </div>
+<div class="card">
+<h3>تغيير الشاشات</h3>
+<p>استبدال شاشات الهواتف الأصلية بأعلى جودة.</p>
+</div>
 
-        <div class="card">
-            <h3>🔧 Expert Technicians</h3>
-            <p>Professional repair specialists.</p>
-        </div>
+<div class="card">
+<h3>تغيير البطاريات</h3>
+<p>بطاريات عالية الجودة لجميع الموديلات.</p>
+</div>
 
-        <div class="card">
-            <h3>💰 Affordable Prices</h3>
-            <p>Competitive rates with quality service.</p>
-        </div>
+<div class="card">
+<h3>إصلاح السوفتوير</h3>
+<p>حل مشاكل النظام والتحديثات والبرمجة.</p>
+</div>
 
-    </div>
+<div class="card">
+<h3>فك القفل والشبكة</h3>
+<p>خدمات احترافية لفك القفل وفتح الشبكات.</p>
+</div>
+
+</div>
 </section>
 
-<section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <br>
+<section class="about" id="about">
+<h2 class="section-title">من نحن</h2>
+<p>
+Ahmed Phone Repair شركة متخصصة في صيانة الهواتف الذكية،
+نقدم خدمات احترافية وسريعة مع ضمان الجودة ورضا الحرفاء.
+</p>
+</section>
 
-    <p>📞 Phone: +216 20 021 903</p>
-    <p>📧 Email: ahdhili832@gmail.com</p>
-    <p>📍 Tunisia</p>
+<section class="contact" id="contact">
+<h2 class="section-title">اتصل بنا</h2>
 
-    <br>
+<p>📞 +216 20 021 903</p>
+<p>📧 ahdhili832@gmail.com</p>
+<p>📍 تونس</p>
 
-    <a href="https://wa.me/21620021903" class="btn">
-        Contact on WhatsApp
-    </a>
+<a href="https://wa.me/21620021903" class="btn">
+تواصل عبر واتساب
+</a>
 </section>
 
 <footer>
-    <p>© 2026 Hdhili's Repair Centre. All Rights Reserved.</p>
+© 2026 Ahmed Phone Repair - جميع الحقوق محفوظة
 </footer>
 
 </body>
